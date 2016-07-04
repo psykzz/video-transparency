@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chroma test</title>
+    <style type="text/css">
+        html {
+            background-image: url('background.png');
+            height: 1000px;
+        }
+    </style>
+</head>
+<body>
+    <video id='vi' loop="loop" autoplay="autoplay">
+        <source src="Demon_VI_MODEL.webm" type="video/webm">
+        <source src="Demon_VI_MODEL.mp4" type="video/mp4">
+        <source src="Demon_VI_MODEL.ogv" type="video/ogv">
+    </video>
+
+    <br />
+
+    <video id='test1' loop="loop" autoplay="autoplay">
+        <source src="test1.webm" type="video/webm">
+        <source src="test1.mp4" type="video/mp4">
+        <source src="test1.ogv" type="video/ogv">
+    </video>
+
+<script src='../src/main.js'></script>
+<script>
+    VideoTransparency('#vi', [223,223,223], 75);
+    VideoTransparency('#test1', [13,101,38], 75);
+</script>
+</body>
+</html>
